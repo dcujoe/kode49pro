@@ -9,7 +9,7 @@ export default function Head() {
         <nav className="nav container">
           <a href="#" class="nav__logo">
             <FontAwesomeIcon icon="fa-solid fa-meteor" />
-            Rolex
+            KODE 49
           </a>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
