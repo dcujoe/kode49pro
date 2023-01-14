@@ -13,9 +13,10 @@
     --title-color: hsl(0, 0%, 15%);
     --text-color: hsl(0, 0%, 35%);
     --text-color-light: hsl(0, 0%, 55%);
-    --body-color: hsl(0, 0%, 99%);
+    /*--body-color: hsl(0, 0%, 99%);*/
+    --body-color: hsl(129, 19%, 64%);
     --container-color: #fff;
-    --border-color: hsl(0, 0%, 94%);
+    /*--border-color: hsl(0, 0%, 94%);*/
     /*========== Font and typography ==========*/
     --body-font: "Roboto", sans-serif;
     --biggest-font-size: 2rem;

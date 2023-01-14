@@ -1,11 +1,11 @@
 import React from "react";
 import homeimage from "../assets/img/feature2.png";
 
-export default function Featured() {
+export default function Special() {
   return (
     <>
       <section class="featured section container" id="featured">
-        <h2 class="section__title">Featured</h2>
+        <h2 class="section__title">Specials</h2>
 
         <div class="featured__container grid">
           <article class="featured__card">
