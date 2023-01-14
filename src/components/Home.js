@@ -1,58 +1,59 @@
 import React from "react";
-import "./Head.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./compocss/Home.css";
 
 export default function Home() {
   return (
     <>
-      <header className="header" id="header">
-        <nav className="nav container">
-          <a href="#" class="nav__logo">
-            <FontAwesomeIcon icon="fa-solid fa-meteor" />
-            KODE 49
-          </a>
-          <div className="nav__menu" id="nav-menu">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link">
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#featured" className="nav__link">
-                  Featured
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#products" className="nav__link">
-                  Products
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#new" className="nav__link">
-                  New
-                </a>
-              </li>
-            </ul>
-
-            <div className="nav__close" id="nav-close">
-              <i class="bx bx-x"></i>
-            </div>
+      <section className="home" id="home">
+        <div className="home__container container grid">
+          <div class="home__img-bg">
+            <img src="../assets/img/feature2.png" alt="" class="home__img" />
           </div>
 
-          <div className="nav__btns">
-            <i className="bx bx-moon change-theme" id="theme-button"></i>
+          <div className="home__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              className="home__social-link"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              className="home__social-link"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              className="home__social-link"
+            >
+              Instagram
+            </a>
+          </div>
 
-            <div className="nav__shop" id="cart-shop">
-              <i className="bx bx-shopping-bag"></i>
-            </div>
+          <div className="home__data">
+            <h1 className="home__title">
+              NEW WATCH <br /> COLLECTIONS B720
+            </h1>
+            <p className="home__description">
+              Latest arrival of the new imported watches of the B720 series,
+              with a modern and resistant design.
+            </p>
+            <span className="home__price">$1245</span>
 
-            <div className="nav__toggle" id="nav-toggle">
-              <i className="bx bx-grid-alt"></i>
+            <div className="home__btns">
+              <a href="#" className="button button--gray button--small">
+                Discover
+              </a>
+
+              <button className="button home__button">ADD TO CART</button>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </section>
     </>
   );
 }
