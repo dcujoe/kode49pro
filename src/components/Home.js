@@ -1,5 +1,6 @@
 import React from "react";
 import "./compocss/Home.css";
+import homeimage from "../assets/img/feature2.png";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <section className="home" id="home">
         <div className="home__container container grid">
           <div class="home__img-bg">
-            <img src="../assets/img/feature2.png" alt="" class="home__img" />
+            <img src={homeimage} alt="" class="home__img" />
           </div>
 
           <div className="home__social">
@@ -36,11 +37,12 @@ export default function Home() {
 
           <div className="home__data">
             <h1 className="home__title">
-              NEW WATCH <br /> COLLECTIONS B720
+              NEW LADIES PULLOVERS
+              <br /> COLLECTIONS X2023
             </h1>
             <p className="home__description">
-              Latest arrival of the new imported watches of the B720 series,
-              with a modern and resistant design.
+              New ladies wear collection. Latest arrival of pullovers with high
+              quality features
             </p>
             <span className="home__price">$1245</span>
 

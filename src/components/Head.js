@@ -44,11 +44,11 @@ export default function Head() {
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-              <i className="bx bx-shopping-bag"></i>
+              <FontAwesomeIcon icon="fa-solid fa-meteor" />
             </div>
 
             <div className="nav__toggle" id="nav-toggle">
-              <i className="bx bx-grid-alt"></i>
+              <FontAwesomeIcon icon="fa-solid fa-meteor" />
             </div>
           </div>
         </nav>

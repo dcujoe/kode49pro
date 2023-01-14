@@ -7,7 +7,7 @@
 :root {
     --header-height: 3.5rem;
     /*========== Colors ==========*/
-    --first-color: hsl(31, 100%, 70%);
+    --first-color: hsl(8, 100%, 59%);
     --button-color: hsl(0, 0%, 17%);
     --button-color-alt: hsl(0, 0%, 21%);
     --title-color: hsl(0, 0%, 15%);
@@ -94,6 +94,48 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.container {
+    max-width: 1024px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 6.5rem 0 1rem;
+}
+
+.section__title {
+    position: relative;
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.section__title::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 67px;
+    height: 1px;
+    background-color: var(--first-color);
 }
 
 
