@@ -1,51 +1,58 @@
 import React from "react";
+import "./Head.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Head() {
   return (
     <>
-      <div className="heading" id="heading">
+      <header className="header" id="header">
         <nav className="nav container">
-          <FontAwesomeIcon icon="fa-solid fa-cube" />
-          <div className="nav__menu" id="nav__menu">
+          <a href="#" class="nav__logo">
+            <FontAwesomeIcon icon="fa-solid fa-meteor" />
+            Rolex
+          </a>
+          <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
-              <li className="nav_item">
-                <a href="#home" className="nav__link active-link">
+              <li className="nav__item">
+                <a href="#home" className="nav__link">
                   Home
                 </a>
               </li>
-              <li className="nav_item">
-                <a href="#home" className="nav__link">
+              <li className="nav__item">
+                <a href="#featured" className="nav__link">
                   Featured
                 </a>
               </li>
-              <li className="nav_item">
-                <a href="#home" className="nav__link">
+              <li className="nav__item">
+                <a href="#products" className="nav__link">
                   Products
                 </a>
               </li>
-              <li className="nav_item">
-                <a href="#home" className="nav__link">
-                  New Collection
+              <li className="nav__item">
+                <a href="#new" className="nav__link">
+                  New
                 </a>
               </li>
             </ul>
 
-            <div className="nav__close" id="nav__close">
-              <i className="bx bx-x"></i>
+            <div className="nav__close" id="nav-close">
+              <i class="bx bx-x"></i>
             </div>
           </div>
+
           <div className="nav__btns">
-            <FontAwesomeIcon icon="fa-sharp fa-solid fa-sun-bright" />
+            <i className="bx bx-moon change-theme" id="theme-button"></i>
+
             <div className="nav__shop" id="cart-shop">
-              <FontAwesomeIcon icon="fa-regular fa-basket-shopping-simple" />
+              <i className="bx bx-shopping-bag"></i>
             </div>
-            <div className="nav__shop" id="nav-toggle">
+
+            <div className="nav__toggle" id="nav-toggle">
               <i className="bx bx-grid-alt"></i>
             </div>
           </div>
         </nav>
-      </div>
+      </header>
     </>
   );
 }
