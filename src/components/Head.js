@@ -1,6 +1,6 @@
 import React from "react";
 import "./compocss/Head.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export default function Head() {
   return (
@@ -8,7 +8,7 @@ export default function Head() {
       <header className="header" id="header">
         <nav className="nav container">
           <a href="#" class="nav__logo">
-            <FontAwesomeIcon icon="fa-solid fa-meteor" />
+            
             KODE 49
           </a>
           <div className="nav__menu" id="nav-menu">
@@ -44,11 +44,11 @@ export default function Head() {
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-              <FontAwesomeIcon icon="fa-solid fa-meteor" />
+              
             </div>
 
             <div className="nav__toggle" id="nav-toggle">
-              <FontAwesomeIcon icon="fa-solid fa-meteor" />
+              
             </div>
           </div>
         </nav>

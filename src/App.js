@@ -6,15 +6,21 @@ import Special from "./components/Special";
 import Story from "./components/Story";
 
 function App() {
-  return (
-    <div className="App">
-      <Head />
-      <Home />
-      <Special />
-      <Story />
-      <Footer />
-    </div>
-  );
+    return ( <
+        div className = "App" >
+        <
+        Head / >
+        <
+        Home / >
+        <
+        Special / >
+        <
+        Story / >
+        <
+        Footer / >
+        <
+        /div>
+    );
 }
 
 export default App;
