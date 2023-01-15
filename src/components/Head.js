@@ -25,12 +25,13 @@ export default function Head() {
               </li>
               <li className="nav__item">
                 <a href="#products" className="nav__link">
-                  Products
+                  Food varieties
                 </a>
               </li>
               <li className="nav__item">
                 <a href="#new" className="nav__link">
-                  New
+                  <input />
+                  food search
                 </a>
               </li>
             </ul>

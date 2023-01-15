@@ -6,20 +6,15 @@ import Special from "./components/Special";
 import Story from "./components/Story";
 
 function App() {
-    return ( <
-        div className = "App" >
-        <
-        Head / >
-        <
-        Home / >
-        <
-        Special / >
-        <
-        Story / >
-        <
-        Footer / >
-        <
-        /div>
+    return ( 
+        <div className = "App" >
+        <Home />
+        <Head />
+        <Special />
+        <Story />
+        <Footer />
+        </div>
+       
     );
 }
 

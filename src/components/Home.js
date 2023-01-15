@@ -37,14 +37,13 @@ export default function Home() {
 
           <div className="home__data">
             <h1 className="home__title">
-              NEW LADIES PULLOVERS
-              <br /> COLLECTIONS X2023
+              NEW DISHES TO TRY
+              <br /> FOOD COLLECTION 2023
             </h1>
             <p className="home__description">
-              New ladies wear collection. Latest arrival of pullovers with high
-              quality features
+              New dishes to try from all over the world at great prices. Try our latest best-seller meal package
             </p>
-            <span className="home__price">$1245</span>
+            <span className="home__price">€30</span>
 
             <div className="home__btns">
               <a href="#" className="button button--gray button--small">
