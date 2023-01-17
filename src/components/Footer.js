@@ -10,9 +10,9 @@ export default function Footer() {
             <h3 class="footer__title">Our information</h3>
 
             <ul class="footer__list">
-              <li>1234 - Peru</li>
-              <li>La Libertad 43210</li>
-              <li>123-456-789</li>
+              <li>50234 Bonn Germany</li>
+              <li>Straße Straße 6023</li>
+              <li>9283-9273-20101</li>
             </ul>
           </div>
           <div class="footer__content">
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" class="footer__link">
-                  Copy Right
+                  All rights reserved
                 </a>
               </li>
             </ul>
@@ -48,22 +48,22 @@ export default function Footer() {
             <ul class="footer__links">
               <li>
                 <a href="#" class="footer__link">
-                  Road bikes
+                  Red pullovers
                 </a>
               </li>
               <li>
                 <a href="#" class="footer__link">
-                  Mountain bikes
+                  Green pullovers
                 </a>
               </li>
               <li>
                 <a href="#" class="footer__link">
-                  Electric
+                  Summer style
                 </a>
               </li>
               <li>
                 <a href="#" class="footer__link">
-                  Accesories
+                  Best collection
                 </a>
               </li>
             </ul>
@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
+        <span class="footer__copy">&#169; Kode49 all rights</span>
       </footer>
     </>
   );

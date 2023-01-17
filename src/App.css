@@ -13,8 +13,7 @@
     --title-color: hsl(0, 0%, 15%);
     --text-color: hsl(0, 0%, 35%);
     --text-color-light: hsl(0, 0%, 55%);
-    /*--body-color: hsl(0, 0%, 99%);*/
-    --body-color: hsl(129, 19%, 64%);
+    --body-color: hsl(0, 0%, 99%);
     --container-color: #fff;
     /*--border-color: hsl(0, 0%, 94%);*/
     /*========== Font and typography ==========*/
