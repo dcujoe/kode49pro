@@ -59,6 +59,8 @@
     font-weight: var(--font-medium);
     color: var(--first-color);
     margin-bottom: var(--mb-3);
+    margin-left: 40%;
+    color: black
 }
 
 .home__btns {

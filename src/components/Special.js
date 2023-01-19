@@ -5,7 +5,7 @@ export default function Special() {
   return (
     <>
       <section className="featured section container" id="featured">
-        <h2 className="section__title">Specials</h2>
+        <h2 className="section__title">Featured</h2>
 
         <div className="featured__container grid">
           <article className="featured__card">

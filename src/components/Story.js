@@ -11,12 +11,11 @@ export default function Story() {
             <h2 className="section__title story__section-title">Our Story</h2>
 
             <h1 className="story__title">
-              Inspirational Watch of <br /> this year
+              Inspirational Agro Start up of the year
             </h1>
 
             <p className="story__description">
-              The latest and modern watches of this year, is available in
-              various presentations in this store, discover them now.
+              Get the best farm produce from anywhere in the world with just a click of a button
             </p>
 
             <a href="#" className="button button--small">
