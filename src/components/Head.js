@@ -8,13 +8,25 @@ export default function Head() {
     
       <header className="header" id="header">
       <div className="roller">
-        <a href="#">Get the best ladies wear now! click here</a>
+        <a href="#">Order Agricultural products anytime from anywhere!</a>
       </div>
         <nav className="nav container">
           <a href="#" class="nav__logo">
-            
             KODE 49
           </a>
+
+          //shopping cart to be placed here */
+          <div className="nav__btns">
+            <i className="bx bx-moon change-theme" id="theme-button"></i>
+
+            <div className="nav__shop" id="cart-shop">
+            <i class="fa-light fa-truck-container"></i>
+            </div>
+
+            <div className="nav__toggle" id="nav-toggle">
+              
+            </div>
+          </div>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
               <li className="nav__item">
@@ -28,13 +40,13 @@ export default function Head() {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#products" className="nav__link">
-                  Products
+                <a href="#story" className="nav__link">
+                  Story
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#new" className="nav__link">
-                  New
+                <a href="#variety" className="nav__link">
+                  Variety
                 </a>
               </li>
             </ul>
@@ -44,17 +56,6 @@ export default function Head() {
             </div>
           </div>
 
-          <div className="nav__btns">
-            <i className="bx bx-moon change-theme" id="theme-button"></i>
-
-            <div className="nav__shop" id="cart-shop">
-              
-            </div>
-
-            <div className="nav__toggle" id="nav-toggle">
-              
-            </div>
-          </div>
         </nav>
       </header>
     </>

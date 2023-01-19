@@ -5,7 +5,7 @@ import homeimage from "../assets/img/feature2.png";
 export default function Variety() {
   return (
     <div>
-        <section className="testimonial section container">
+        <section className="testimonial section container" id="variety">
                 <div className="testimonial__container grid">
                     <div className="swiper testimonial-swiper">
                         <div className="swiper-wrapper">
@@ -14,9 +14,7 @@ export default function Variety() {
                                     <i className='bx bxs-quote-alt-left' ></i>
                                 </div>
                                 <p className="testimonial__description">
-                                    They are the best watches that one acquires, also they are always with the latest 
-                                    news and trends, with a very comfortable price and especially with the attention 
-                                    you receive, they are always attentive to your questions.
+                                    Best food varieties from all over the world. Order in bulk or in small. We deliver!
                                 </p>
                                 <h3 className="testimonial__date">March 27. 2021</h3>
         
