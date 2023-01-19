@@ -36,6 +36,14 @@ export default function Home() {
           </div>
 
           <div className="home__data">
+            
+            <div className="home__btns">
+              <a href="#" className="button button--gray button--small">
+                Discover
+              </a>
+
+              <button className="button home__button">ADD TO CART</button>
+            </div>
             <h1 className="home__title">
               NEW DISHES TO TRY
               <br /> FOOD COLLECTION 2023
@@ -45,13 +53,6 @@ export default function Home() {
             </p>
             <span className="home__price">€30</span>
 
-            <div className="home__btns">
-              <a href="#" className="button button--gray button--small">
-                Discover
-              </a>
-
-              <button className="button home__button">ADD TO CART</button>
-            </div>
           </div>
         </div>
       </section>

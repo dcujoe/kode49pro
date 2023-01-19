@@ -2,12 +2,13 @@
 
 .home__container {
     position: relative;
-    row-gap: 2.5rem;
+    row-gap: 1.5rem;
 }
 
 .home__img {
     width: 400px;
     height: 550px;
+    margin-top: 5%;
 }
 
 
@@ -25,7 +26,7 @@
 
 .home__social {
     position: absolute;
-    top: 35%;
+    top: 65%;
     left: -5rem;
     transform: rotate(-90deg);
     display: flex;
@@ -63,6 +64,7 @@
 .home__btns {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .home__button {

@@ -5,7 +5,11 @@ import "./compocss/Head.css";
 export default function Head() {
   return (
     <>
+    
       <header className="header" id="header">
+      <div className="roller">
+        <a href="#">Get the best ladies wear now! click here</a>
+      </div>
         <nav className="nav container">
           <a href="#" class="nav__logo">
             
