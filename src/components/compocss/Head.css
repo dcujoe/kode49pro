@@ -79,5 +79,33 @@
     width: 100%;
     height: 50px;
     position: -webkit-sticky;
-    background-color: hsl(199, 99%, 55%);
+    background-color: #bdedfc;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
 }
+
+
+
+
+
+  
+  .roller a {
+    color: black;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    align-items: center;
+    left: 0%;
+    top: 0%;
+    animation: primary 10s linear infinite;
+  }
+  
+  @keyframes primary {
+    from {
+      right: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
