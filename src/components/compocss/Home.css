@@ -61,8 +61,15 @@
     font-weight: var(--font-medium);
     color: var(--first-color);
     margin-bottom: var(--mb-3);
-    margin-left: 40%;
-    color: black
+    margin-left: 30%;
+    background-color: #bdedfc;
+    padding: 1rem;
+}
+
+.home__price a {
+    color: black;
+    text-decoration: none;
+    border-radius: 0.25rem;
 }
 
 .home__btns {
@@ -72,7 +79,5 @@
     border-radius: 0.25rem;
 }
 
-.home__button {
-    box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
-}
+
 

@@ -27,7 +27,9 @@ export default function Head() {
               
             </div>
           </div>
+          
           <div className="nav__menu" id="nav-menu">
+          
             <ul className="nav__list">
               <li className="nav__item">
                 <a href="#home" className="nav__link">

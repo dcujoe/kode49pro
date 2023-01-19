@@ -117,3 +117,11 @@
       left: 0%;
     }
   }
+
+  .home__search {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: aliceblue;
+  }
+  

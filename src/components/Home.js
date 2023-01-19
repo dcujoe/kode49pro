@@ -10,6 +10,7 @@ export default function Home() {
           <div class="home__img-bg">
             <img src={homeimage} alt="" class="home__img" />
           </div>
+          
 
           <div className="home__social">
             <a
@@ -51,7 +52,9 @@ export default function Home() {
             <p className="home__description">
              Buy food in large quantities from all over the world directly from farmers
             </p>
-            <span className="home__price">€30</span>
+            <button className="home__price">
+              <a>Best food deals</a>
+            </button>
 
           </div>
         </div>
