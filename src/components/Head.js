@@ -36,7 +36,7 @@ export default function Head() {
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-            <ShoppingOutlined />
+            <a className="shop__cart"><ShoppingOutlined /></a>
             </div>
 
             <div className="nav__toggle" id="nav-toggle">
