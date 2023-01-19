@@ -65,6 +65,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 80px;
+    border-radius: 0.25rem;
 }
 
 .home__button {
