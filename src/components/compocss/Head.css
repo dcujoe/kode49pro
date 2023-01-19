@@ -2,7 +2,8 @@
 
 .header {
     width: 100%;
-    background: #efeff0;
+    background: #bdedfc;
+    ;
     position: fixed;
     top: 0;
     left: 0;
@@ -90,6 +91,7 @@
     top: 0;
     z-index: 1;
     overflow-x: hidden;
+    border-bottom: solid 0.10rem white;
 }
 
 
