@@ -71,6 +71,8 @@
     color: var(--first-color);
 }
 
+
+/* created infinite scroll using CSS from parent to child roller element*/
 .roller {
     display: flex;
     flex-direction: row;
@@ -86,26 +88,25 @@
 }
 
 
-
-
-
   
   .roller a {
     color: black;
+    top: auto;
+    margin-top: 1rem;
     width: inherit;
     height: inherit;
-    position: relative;
+    position: absolute;
     align-items: center;
-    left: 0%;
+    left: 100%;
     top: 0%;
     animation: primary 10s linear infinite;
   }
   
   @keyframes primary {
     from {
-      right: 0%;
+      right: 100%;
     }
     to {
-      left: -100%;
+      left: 0%;
     }
   }
