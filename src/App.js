@@ -5,7 +5,7 @@ import Head from "./components/Head";
 import Home from "./components/Home";
 import Special from "./components/Special";
 import Story from "./components/Story";
-import Testimonials from './components/Testimonials';
+import Variety from './components/Variety';
 
 function App() {
     return ( 
@@ -14,7 +14,7 @@ function App() {
         <Head />
         <Special />
         <Story />
-        <Testimonials />
+        <Variety />
         <Footer />
         </div>
        

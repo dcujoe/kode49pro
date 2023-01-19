@@ -1,8 +1,8 @@
 import React from 'react'
-import './compocss/testimonials.css'
+import './compocss/variety.css';
 import homeimage from "../assets/img/feature2.png";
 
-const Testimonials = () => {
+export default function Variety() {
   return (
     <div>
         <section className="testimonial section container">
@@ -92,4 +92,3 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials

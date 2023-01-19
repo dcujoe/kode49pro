@@ -45,11 +45,11 @@ export default function Home() {
               <button className="button home__button">ADD TO CART</button>
             </div>
             <h1 className="home__title">
-              NEW DISHES TO TRY
-              <br /> FOOD COLLECTION 2023
+              WELCOME TO THE FUTURE
+              <br /> OF AGRICULTURE
             </h1>
             <p className="home__description">
-              New dishes to try from all over the world at great prices. Try our latest best-seller meal package
+             Buy food in large quantities from all over the world directly from farmers
             </p>
             <span className="home__price">€30</span>
 
