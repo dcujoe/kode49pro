@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import SearchPage from "./SearchPage";
 import "./compocss/Head.css";
-
+import { ShoppingOutlined } from '@ant-design/icons';
 
 export default function Head() {
+
+ 
+
+
+  const [searchItem,setSearchItem] = useState("");
+  
+
+
+
+  
+
+
+
+
   return (
     <>
     
@@ -15,19 +30,23 @@ export default function Head() {
             KODE 49
           </a>
 
-          //shopping cart to be placed here */
+          
           <div className="nav__btns">
+            {/*change the theme of the code */}
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-            <i class="fa-light fa-truck-container"></i>
+            <ShoppingOutlined />
             </div>
 
             <div className="nav__toggle" id="nav-toggle">
               
             </div>
           </div>
+          <div className="search__parent">
+          <input href="#" alt="searchbar" className="search__bar" />
           
+          </div>
           <div className="nav__menu" id="nav-menu">
           
             <ul className="nav__list">
