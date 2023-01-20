@@ -1,7 +1,8 @@
 import React from "react";
+import "./compocss/featured.css";
 import homeimage from "../assets/img/feature2.png";
 
-export default function Special() {
+export default function Featured() {
   return (
     <>
       <section className="featured section container" id="featured">

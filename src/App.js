@@ -3,7 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Head from "./components/Head";
 import Home from "./components/Home";
-import Special from "./components/Special";
+import Featured from './components/Featured';
 import Story from "./components/Story";
 import Variety from './components/Variety';
 /*import useSWR from 'swr'*/
@@ -26,7 +26,7 @@ const { data, error, isLoading } = useSWR('', fetcher)
         <div className = "App" >
         <Home />
         <Head />
-        <Special />
+        <Featured />
         <Story />
         <Variety />
         <Footer />

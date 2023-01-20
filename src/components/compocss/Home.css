@@ -1,13 +1,19 @@
 /*=============== HOME ===============*/
 
 .home__container {
+    margin-top: 5%;;
     position: relative;
     row-gap: 1.5rem;
+    margin-bottom: 0;
 }
 
 .home__img {
     width: 400px;
     height: 550px;
+    margin-top: 5%;
+}
+
+.home__data {
     margin-top: 5%;
 }
 
