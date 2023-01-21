@@ -27,7 +27,6 @@ export default function Variety() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="testimonial__card swiper-slide">
                                 <div className="testimonial__quote">
                                     <i className='bx bxs-quote-alt-left' ></i>
