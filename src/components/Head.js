@@ -1,24 +1,36 @@
 import React, { useState } from "react";
-import SearchPage from "./SearchPage";
 import "./compocss/Head.css";
 import { ShoppingOutlined } from '@ant-design/icons';
 
 export default function Head() {
 
+let searchData = require('./../data.json');
+
  
+const [searchItem,setSearchItem] = useState(searchData);
+  
+
+const onChange = (e) => {
+if (e.target.value === "") {
+  setSearchItem(searchData);
+} else {
+  setSearchItem(e.target.value);
+}
+
+const data = searchData.filter((d) => d.toLowerCase().indexOf(
+  e.target.value.toLowerCase()) !== -1);
+
+  setSearchItem(data);
+}
 
 
-  const [searchItem,setSearchItem] = useState("");
   
 
 
 
-  
 
 
-
-
-  return (
+return (
     <>
     
       <header className="header" id="header">
@@ -36,7 +48,7 @@ export default function Head() {
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-            <a><ShoppingOutlined /></a>
+            <a clasName="shopping_icon"><ShoppingOutlined /></a>
             </div>
 
             <div className="nav__toggle" id="nav-toggle">
@@ -44,7 +56,19 @@ export default function Head() {
             </div>
           </div>
           <div className="search__parent">
-          <input href="#" alt="searchbar" className="search__bar" />
+          <input href="#" alt="searchbar" 
+          type="text"
+          onChange={onChange}
+          className="search__bar"
+          list="browsers" name="browser" id="browser" />
+          <datalist id="browsers">
+            <option value="Chrome"/>
+            <option value="Firefox"/>
+            <option value="Opera"/>
+            <option value="Safari"/>
+            <option value="Edge"/>
+          </datalist>
+          
           
           </div>
           <div className="nav__menu" id="nav-menu">

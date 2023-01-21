@@ -43,6 +43,16 @@
     column-gap: 0.5rem;
 }
 
+
+
+.nav__shop {
+    display: flex;
+    justify-content: center;
+    margin-right: 6rem;
+    font-size: 2rem;
+}
+
+
 @media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
@@ -129,7 +139,5 @@
     overflow: hidden;
   }
 
-  .shop__cart {
-    font-size: 1.5rem;
-  }
+ 
   

@@ -15,7 +15,7 @@ export default function Special() {
 
             <div className="featured__data">
               <h3 className="featured__title">Jazzmaster</h3>
-              <span className="featured__price">$1050</span>
+              <span className="featured__price">1050</span>
             </div>
 
             <button className="button featured__button">ADD TO CART</button>
