@@ -32,11 +32,8 @@ export default function Featured() {
           <article className="featured__card">
             <span className="featured__tag">Sale</span>
 
-            {/*<img src={homeimage} alt="" className="featured__img" />*/}
-            {
-              data && data.length>0 && data.map((item) =><p>{item.type}</p>)
-            }
-
+            <img src={homeimage} alt="" className="featured__img" />
+           
             <div className="featured__data">
               <h3 className="featured__title">Ingersoll</h3>
               <span className="featured__price">$250</span>
