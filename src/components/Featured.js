@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./compocss/featured.css";
-import homeimage from "../assets/img/feature2.png";
+import homeimage from "../assets/img/food4.jpeg";
 
 export default function Featured() {
+  const [data, setData] = useState([]);
+
+
+ 
+
+
+
   return (
     <>
       <section className="featured section container" id="featured">
@@ -25,7 +32,10 @@ export default function Featured() {
           <article className="featured__card">
             <span className="featured__tag">Sale</span>
 
-            <img src={homeimage} alt="" className="featured__img" />
+            {/*<img src={homeimage} alt="" className="featured__img" />*/}
+            {
+              data && data.length>0 && data.map((item) =><p>{item.type}</p>)
+            }
 
             <div className="featured__data">
               <h3 className="featured__title">Ingersoll</h3>

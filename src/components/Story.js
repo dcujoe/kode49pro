@@ -1,6 +1,6 @@
 import React from "react";
 import "./compocss/Story.css";
-import homeimage from "../assets/img/feature2.png";
+import homeimage from "../assets/img/food4.jpeg";
 
 export default function Story() {
   return (

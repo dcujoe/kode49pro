@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./compocss/Home.css";
-import homeimage from "../assets/img/feature2.png";
+import homeimage from "../assets/img/food7.jpeg";
 
 export default function Home() {
+
+  const [data, setData] = useState("");
+
+  const getData = () => {
+    fetch("data.json", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }}).then(function(response){
+      let a = response.json();
+      setData(a);
+      console.log("response = ", a);
+    })
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
+
+
   return (
     <>
       <section className="home" id="home">
         <div className="home__container container grid">
           <div class="home__img-bg">
-            <img src={homeimage} alt="" class="home__img" />
+            <img src={homeimage} alt="homeimage" class="home__img" />
           </div>
           
 

@@ -25,7 +25,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" classNameName="footer__link">
+                <a href="#" className="footer__link">
                   Customer Support
                 </a>
               </li>
@@ -92,8 +92,8 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                classNameName="footer__social-link">
-                <i classNameName="bx bxl-instagram"></i>
+                className="footer__social-link">
+                <i className="bx bxl-instagram"></i>
               </a>
             </ul>
           </div>

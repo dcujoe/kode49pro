@@ -1,6 +1,6 @@
 import React from 'react'
 import './compocss/variety.css';
-import homeimage from "../assets/img/feature2.png";
+import homeimage from "../assets/img/food7.jpeg";
 
 export default function Variety() {
   return (
