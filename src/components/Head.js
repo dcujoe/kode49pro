@@ -1,78 +1,66 @@
 import React, { useState } from "react";
 import "./compocss/Head.css";
-import { ShoppingOutlined } from '@ant-design/icons';
+import data from "./../data.json";
+import { ShoppingOutlined } from "@ant-design/icons";
 
 export default function Head() {
+  let searchData = data.icons;
 
-let searchData = require('./../data.json');
+  const [searchItem, setSearchItem] = useState("");
 
- 
-const [searchItem,setSearchItem] = useState(searchData);
-  
+  const onChange = (e) => {
+    setSearchItem(e.target.value);
+  };
 
-const onChange = (e) => {
-if (e.target.value === "") {
-  setSearchItem(searchData);
-} else {
-  setSearchItem(e.target.value);
-}
+  const onSubmit = (e) => {
+    e.preventDefault();
+    searchData = searchData.filter((item) => {
+      return item.name.toLowerCase().includes(searchItem.toLowerCase());
+      console.log(searchItem);
+    });
+  };
 
-const data = searchData.filter((d) => d.toLowerCase().indexOf(
-  e.target.value.toLowerCase()) !== -1);
+  /* TODO: 
+   1. filter the search data using input from search item
+   2. direct the search result to a new page
+   3. New page displays search results in a list
+   */
 
-  setSearchItem(data);
-}
-
-
-  
-
-
-
-
-
-return (
+  return (
     <>
-    
       <header className="header" id="header">
-      <div className="roller">
-        <a href="#">Order Agricultural products anytime from anywhere!</a>
-      </div>
+        <div className="roller">
+          <a href="#">Order Agricultural products anytime from anywhere!</a>
+        </div>
         <nav className="nav container">
-          <a href="#" class="nav__logo">
+          <a href="#" className="nav__logo">
             KODE 49
           </a>
 
-          
           <div className="nav__btns">
             {/*change the theme of the code */}
             <i className="bx bx-moon change-theme" id="theme-button"></i>
 
             <div className="nav__shop" id="cart-shop">
-            <a clasName="shopping_icon"><ShoppingOutlined /></a>
+              <a className="shopping_icon">
+                <ShoppingOutlined />
+              </a>
             </div>
 
-            <div className="nav__toggle" id="nav-toggle">
-              
-            </div>
+            <div className="nav__toggle" id="nav-toggle"></div>
           </div>
           <div className="search__parent">
-          <input href="#" alt="searchbar" 
-          type="text"
-          onChange={onChange}
-          className="search__bar"
-          list="browsers" name="browser" id="browser" />
-          <datalist id="browsers">
-            <option value="Chrome"/>
-            <option value="Firefox"/>
-            <option value="Opera"/>
-            <option value="Safari"/>
-            <option value="Edge"/>
-          </datalist>
-          
-          
+            <form onSubmit={onSubmit}>
+              <input
+                href="#"
+                alt="searchbar"
+                type="text"
+                className="search__bar"
+                onChange={onChange}
+              />
+            </form>
           </div>
           <div className="nav__menu" id="nav-menu">
-          
             <ul className="nav__list">
               <li className="nav__item">
                 <a href="#home" className="nav__link">
@@ -97,10 +85,9 @@ return (
             </ul>
 
             <div className="nav__close" id="nav-close">
-              <i class="bx bx-x"></i>
+              <i className="bx bx-x"></i>
             </div>
           </div>
-
         </nav>
       </header>
     </>

@@ -6,21 +6,6 @@ export default function Home() {
 
   const [data, setData] = useState("");
 
-  const getData = () => {
-    fetch("data.json", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    }}).then(function(response){
-      let a = response.json();
-      setData(a);
-      console.log("response = ", a);
-    })
-  };
-  useEffect(() => {
-    getData();
-  }, []);
 
 
 
@@ -28,8 +13,8 @@ export default function Home() {
     <>
       <section className="home" id="home">
         <div className="home__container container grid">
-          <div class="home__img-bg">
-            <img src={homeimage} alt="homeimage" class="home__img" />
+          <div className="home__img-bg">
+            <img src={homeimage} alt="homeimage" className="home__img" />
           </div>
           
 

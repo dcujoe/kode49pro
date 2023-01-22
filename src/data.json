@@ -1,26 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "/src/assets/img/feature1.png",
+      "src": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "id": 1,
+      "title": "foodone"
     },
     {
-      "src": "/src/assets/img/feature1.png",
+      "src": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "id": 2,
+      "title": "foodtwo"
     },
     {
-      "src": "/src/assets/img/feature1.png",
+      "src": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "id": 3,
+      "title": "foodthree"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
 
