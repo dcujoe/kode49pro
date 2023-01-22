@@ -3,11 +3,7 @@ import "./compocss/Home.css";
 import homeimage from "../assets/img/food7.jpeg";
 
 export default function Home() {
-
   const [data, setData] = useState("");
-
-
-
 
   return (
     <>
@@ -16,7 +12,6 @@ export default function Home() {
           <div className="home__img-bg">
             <img src={homeimage} alt="homeimage" className="home__img" />
           </div>
-          
 
           <div className="home__social">
             <a
@@ -43,7 +38,6 @@ export default function Home() {
           </div>
 
           <div className="home__data">
-            
             <div className="home__btns">
               <a href="#" className="button button--gray button--small">
                 Discover
@@ -56,12 +50,12 @@ export default function Home() {
               <br /> OF AGRICULTURE
             </h1>
             <p className="home__description">
-             Buy food in large quantities from all over the world directly from farmers
+              Buy food in large quantities from all over the world directly from
+              farmers
             </p>
             <button className="home__price">
-              <a>Best food deals</a>
+              <a>Best food deals worldwide</a>
             </button>
-
           </div>
         </div>
       </section>

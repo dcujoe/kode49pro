@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./compocss/Head.css";
 import data from "./../data.json";
-import { ShoppingOutlined } from "@ant-design/icons";
+import { ShoppingOutlined, SearchOutlined } from "@ant-design/icons";
 
 export default function Head() {
   let searchData = data.icons;
@@ -58,6 +58,7 @@ export default function Head() {
                 className="search__bar"
                 onChange={onChange}
               />
+              <SearchOutlined className="search__icon" href="#" />
             </form>
           </div>
           <div className="nav__menu" id="nav-menu">

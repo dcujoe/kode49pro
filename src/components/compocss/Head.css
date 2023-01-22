@@ -1,143 +1,137 @@
 /*HEADER & NAV BAR */
 
 .header {
-    width: 100%;
-    background: #bdedfc;
-    ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    box-shadow: none;
-    /* for animation purposes*/
-    transition: all 0.4s ease-in-out;
+  width: 100%;
+  background: #bdedfc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  box-shadow: none;
+  /* for animation purposes*/
+  transition: all 0.4s ease-in-out;
 }
 
 .nav {
-    height: var(--header-height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__logo {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
-    font-size: 1.2rem;
-    color: rgb(15, 14, 14);
-    width: 6rem;
-    text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(15, 14, 14);
+  width: 6rem;
+  text-align: center;
 }
 
 .nav__logo-icon {
-    font-size: 1rem !important;
+  font-size: 1rem !important;
 }
 
 .nav__btns {
-    display: flex;
-    justify-content: center;
-    column-gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
 }
-
-
 
 .nav__shop {
-    display: flex;
-    justify-content: center;
-    margin-right: 6rem;
-    font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 6rem;
+  font-size: 2rem;
 }
 
-
 @media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        background-color: var(--body-color);
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100%;
-        padding: 6rem 2rem 3.5rem;
-        transition: 0.3s;
-    }
-
-
-  
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 2rem 3.5rem;
+    transition: 0.3s;
+  }
 }
 
 .nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
 }
 
 .nav__link {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    text-transform: uppercase;
-    font-size: var(--h2-font-size);
-    transition: 0.3s;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  font-size: var(--h2-font-size);
+  transition: 0.3s;
 }
 
 .nav__link:hover {
-    color: var(--first-color);
+  color: var(--first-color);
 }
-
 
 /* created infinite scroll using CSS from parent to child roller element*/
 .roller {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-    position: -webkit-sticky;
-    background-color: #bdedfc;
-    top: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    border-bottom: solid 0.10rem white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  position: -webkit-sticky;
+  background-color: #bdedfc;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  border-bottom: solid 0.1rem white;
 }
 
+.roller a {
+  color: black;
+  top: auto;
+  margin-top: 1rem;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  align-items: center;
+  left: 100%;
+  top: 0%;
+  animation: primary 10s linear infinite;
+}
 
-  
-  .roller a {
-    color: black;
-    top: auto;
-    margin-top: 1rem;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    align-items: center;
-    left: 100%;
-    top: 0%;
-    animation: primary 10s linear infinite;
+@keyframes primary {
+  from {
+    right: 100%;
   }
-  
-  @keyframes primary {
-    from {
-      right: 100%;
-    }
-    to {
-      left: 0%;
-    }
+  to {
+    left: 0%;
   }
+}
 
-  .search__bar {
-    position: relative;
-    background-color: aliceblue;
-    padding: 0.7rem;
-    border-radius: 0.3rem;
-    border: 0.1rem solid aliceblue;
-    overflow: hidden;
-  }
+.search__bar {
+  position: relative;
+  background-color: aliceblue;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid aliceblue;
+  overflow: hidden;
+}
 
- 
-  
+.search__icon {
+  position: relative;
+  top: 0.3rem;
+  margin-left: 0.25rem;
+  font-size: 1.5rem;
+}

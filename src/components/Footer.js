@@ -92,7 +92,8 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                className="footer__social-link">
+                className="footer__social-link"
+              >
                 <i className="bx bxl-instagram"></i>
               </a>
             </ul>
