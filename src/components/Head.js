@@ -6,18 +6,17 @@ import { ShoppingOutlined, SearchOutlined } from "@ant-design/icons";
 export default function Head() {
   let searchData = data.icons;
 
-  const [searchItem, setSearchItem] = useState("");
+  const [value, setValue] = useState("");
 
-  const onChange = (e) => {
-    setSearchItem(e.target.value);
+  const onChange = (event) => {
+    setValue(event.target.value);
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    searchData = searchData.filter((item) => {
-      return item.name.toLowerCase().includes(searchItem.toLowerCase());
-      console.log(searchItem);
-    });
+  const onSearch = (searchInput) => {
+    setValue(searchInput);
+    /* Create the API to get the search item */
+
+    console.log("search ", searchInput);
   };
 
   /* TODO: 
@@ -50,15 +49,21 @@ export default function Head() {
             <div className="nav__toggle" id="nav-toggle"></div>
           </div>
           <div className="search__parent">
-            <form onSubmit={onSubmit}>
+            <form>
               <input
                 href="#"
                 alt="searchbar"
                 type="text"
                 className="search__bar"
                 onChange={onChange}
+                value={value}
               />
-              <SearchOutlined className="search__icon" href="#" />
+
+              <SearchOutlined
+                className="search__icon"
+                href="#"
+                onClick={() => onSearch(value)}
+              />
             </form>
           </div>
           <div className="nav__menu" id="nav-menu">
