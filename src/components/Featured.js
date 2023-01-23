@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/featured.css";
-import homeimage from "../assets/img/food4.jpeg";
+import homeimage from "../assets/img/food7.jpeg";
 
 export default function Featured() {
   const [data, setData] = useState([]);
-
-
- 
-
-
 
   return (
     <>
@@ -33,7 +28,7 @@ export default function Featured() {
             <span className="featured__tag">Sale</span>
 
             <img src={homeimage} alt="" className="featured__img" />
-           
+
             <div className="featured__data">
               <h3 className="featured__title">Ingersoll</h3>
               <span className="featured__price">$250</span>

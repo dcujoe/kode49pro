@@ -1,6 +1,6 @@
 import React from "react";
 import "./compocss/Story.css";
-import homeimage from "../assets/img/food4.jpeg";
+import homeimage from "../assets/img/food7.jpeg";
 
 export default function Story() {
   return (
@@ -14,7 +14,8 @@ export default function Story() {
             </h1>
 
             <p className="story__description">
-              Get the best farm produce from anywhere in the world with just a click of a button
+              Get the best farm produce from anywhere in the world with just a
+              click of a button
             </p>
             <a href="#" className="button button--small">
               Discover
