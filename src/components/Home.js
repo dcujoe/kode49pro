@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./compocss/Home.css";
 import homeimage from "../assets/img/food7.jpeg";
 
@@ -43,9 +42,8 @@ export default function Home() {
               <a href="#" className="button button--gray button--small">
                 Discover
               </a>
-              <Link to="/checkout">
-                <button className="button home__button">ADD TO CART</button>
-              </Link>
+
+              <button className="button home__button">ADD TO CART</button>
             </div>
             <h1 className="home__title">
               WELCOME TO THE FUTURE
