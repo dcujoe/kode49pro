@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/Home.css";
+import { Link } from "react-router-dom";
+import Head from "./Head";
+import Featured from "./Featured";
+import Story from "./Story";
+import Variety from "./Variety";
+import Footer from "./Footer";
 import homeimage from "../assets/img/food7.jpeg";
 
 export default function Home() {
@@ -7,6 +13,7 @@ export default function Home() {
 
   return (
     <>
+      <Head />
       <section className="home" id="home">
         <div className="home__container container grid">
           <div className="home__img-bg">
@@ -14,27 +21,21 @@ export default function Home() {
           </div>
 
           <div className="home__social">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              className="home__social-link"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              className="home__social-link"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              className="home__social-link"
-            >
-              Instagram
-            </a>
+            <Link to="https://www.facebook.com/">
+              <a target="_blank" className="home__social-link">
+                Facebook
+              </a>
+            </Link>
+            <Link to="https://twitter.com">
+              <a target="_blank" className="home__social-link">
+                Twitter
+              </a>
+            </Link>
+            <Link to="https://www.instagram.com/">
+              <a target="_blank" className="home__social-link">
+                Instagram
+              </a>
+            </Link>
           </div>
 
           <div className="home__data">
@@ -42,8 +43,9 @@ export default function Home() {
               <a href="#" className="button button--gray button--small">
                 Discover
               </a>
-
-              <button className="button home__button">ADD TO CART</button>
+              <Link to="/checkout">
+                <button className="button home__button">ADD TO CART</button>
+              </Link>
             </div>
             <h1 className="home__title">
               WELCOME TO THE FUTURE
@@ -54,11 +56,15 @@ export default function Home() {
               of your home.
             </p>
             <button className="home__price">
-              <a>Best deals for European producers</a>
+              <a>Food deals producers</a>
             </button>
           </div>
         </div>
       </section>
+      <Featured />
+      <Story />
+      <Variety />
+      <Footer />
     </>
   );
 }

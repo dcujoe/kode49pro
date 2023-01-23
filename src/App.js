@@ -1,17 +1,15 @@
 import React from "react";
 import "./App.css";
 import Footer from "./components/Footer";
-import Head from "./components/Head";
 import Home from "./components/Home";
 import Featured from "./components/Featured";
 import Story from "./components/Story";
 import Variety from "./components/Variety";
-/*import useSWR from 'swr'*/
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Head />
       <Home />
       <Featured />
       <Story />
@@ -22,3 +20,11 @@ function App() {
 }
 
 export default App;
+
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/Checkout" element={<Checkout />} />
+    <Route path="/Login" element={<Login />} />
+  </Routes>
+</BrowserRouter>;
