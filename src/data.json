@@ -1,26 +1,31 @@
 {
   "icons": [
     {
-      "src": "/src/assets/img/food4.jpeg",
+      "image": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon",
       "id": 1,
-      "title": "foodone"
+      "title": "foodone",
+      "price": "12.24",
+      "rating": "4"
     },
     {
-      "src": "/src/assets/img/food4.jpeg",
+      "image": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon",
       "id": 2,
-      "title": "foodtwo"
+      "title": "foodtwo",
+      "price": "13.54",
+      "rating": "5"
     },
     {
-      "src": "/src/assets/img/food4.jpeg",
+      "image": "/src/assets/img/food4.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon",
       "id": 3,
-      "title": "foodthree"
+      "title": "foodthree",
+      "price": "10.24",
+      "rating": "3"
     }
   ]
 }
-
