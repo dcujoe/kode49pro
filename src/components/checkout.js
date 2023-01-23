@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "./Head";
+import { useStateValue } from "./StateProvider";
 
 export default function checkout() {
   const [{ basket }, dispatch] = useStateValue();

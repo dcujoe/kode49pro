@@ -31,7 +31,7 @@ export default function Home() {
                 Twitter
               </a>
             </Link>
-            <Link to="https://www.instagram.com/">
+            <Link to="https://www.instagram.com">
               <a target="_blank" className="home__social-link">
                 Instagram
               </a>
