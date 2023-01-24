@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./compocss/Head.css";
-import data from "./../data.json";
 import { Link } from "react-router-dom";
 import { ShoppingOutlined, SearchOutlined } from "@ant-design/icons";
 import { useStateValue } from "./StateProvider";
-import { getBasketTotal } from "./reducer";
 
 export default function Head({ id, title, image, price }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -27,14 +25,6 @@ export default function Head({ id, title, image, price }) {
    2. direct the search result to a new page
    3. New page displays search results in a list
    */
-
-  const addToBasket = () => {
-    // dispatch is the javascript object that indicates the action to be done
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: { id: id, title: title, image: image, price: price },
-    });
-  };
 
   return (
     <>

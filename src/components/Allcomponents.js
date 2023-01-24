@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Head from "./Head";
 import Home from "./Home";
 import Featured from "./Featured";
