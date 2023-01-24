@@ -72,7 +72,7 @@
 
 .nav__link {
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: 500;
   text-transform: uppercase;
   font-size: var(--h2-font-size);
   transition: 0.3s;
