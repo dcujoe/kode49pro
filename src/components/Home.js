@@ -46,11 +46,11 @@ export default function Home() {
               <br /> OF AGRICULTURE
             </h1>
             <p className="home__description">
-              Get food from farmers in Africa, Asia & South America from comfort
-              of your home.
+              Get bulk food from farmers in Africa and Asia from comfort of your
+              home.
             </p>
             <button className="home__price">
-              <a>Food deals producers</a>
+              <a>Best food deals</a>
             </button>
           </div>
         </div>

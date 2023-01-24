@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./compocss/Head.css";
 import data from "./../data.json";
+import { Link } from "react-router-dom";
 import { ShoppingOutlined, SearchOutlined } from "@ant-design/icons";
 
 export default function Head() {
@@ -52,12 +53,13 @@ export default function Head() {
           <div className="nav__btns">
             {/*change the theme of the code */}
             <i className="bx bx-moon change-theme" id="theme-button"></i>
-
-            <div className="nav__shop" id="cart-shop">
-              <a className="shopping_icon">
-                <ShoppingOutlined />
-              </a>
-            </div>
+            <Link to="/Checkout" className="link_checkout">
+              <div className="nav__shop" id="cart-shop">
+                <a className="shopping_icon">
+                  <ShoppingOutlined />
+                </a>
+              </div>
+            </Link>
 
             <div className="nav__toggle" id="nav-toggle"></div>
           </div>

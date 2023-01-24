@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/featured.css";
 import homeimage from "../assets/img/food7.jpeg";
+import { icons } from "react-icons";
 
-export default function Featured() {
+export default function Featured({ price, image, id, title }) {
   const [data, setData] = useState([]);
+
+  const imageData = require("../data.json");
 
   return (
     <>
@@ -15,10 +18,10 @@ export default function Featured() {
             <span className="featured__tag">Sale</span>
 
             <img src={homeimage} alt="" className="featured__img" />
-
+            {image}
             <div className="featured__data">
               <h3 className="featured__title">Jazzmaster</h3>
-              <span className="featured__price">$1050</span>
+              <span className="featured__price">{price}</span>
             </div>
 
             <button className="button featured__button">ADD TO CART</button>

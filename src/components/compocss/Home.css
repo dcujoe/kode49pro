@@ -18,7 +18,7 @@
 }
 
 .home__data {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 /*.home__img-bg {
@@ -60,7 +60,8 @@
 }
 
 .home__description {
-  margin-bottom: var(--mb-1-5);
+  font: bold;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -70,7 +71,7 @@
   font-weight: var(--font-medium);
   color: var(--first-color);
   margin-bottom: var(--mb-3);
-  margin-left: 20%;
+  margin-left: 30%;
   background-color: #bdedfc;
   padding: 1rem;
   border-radius: 0.25rem;
