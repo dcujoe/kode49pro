@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 999;
   box-shadow: none;
   /* for animation purposes*/
   transition: all 0.4s ease-in-out;

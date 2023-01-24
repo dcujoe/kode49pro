@@ -9,7 +9,7 @@ export const initialState = {
 
 export const getBasketTotal = (basket) => {
   // the .reduce function to return item and amount
-  return basket.reduce((amount, item) => item.price + amount);
+  return basket.reduce((amount, item) => item.price + amount, 0);
 };
 
 //the reduce is immutable thus using const

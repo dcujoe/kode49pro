@@ -1,7 +1,7 @@
 import React from "react";
 import { useStateValue } from "./StateProvider";
 
-const CheckProduct = ({ id, image, title, pricing, rating }) => {
+const CheckProduct = ({ id, image, title, price, rating }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {

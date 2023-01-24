@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/Home.css";
 import { Link } from "react-router-dom";
-import Head from "./Head";
-import Featured from "./Featured";
-import Story from "./Story";
-import Variety from "./Variety";
-import Footer from "./Footer";
 import homeimage from "../assets/img/food7.jpeg";
 
 export default function Home() {
@@ -13,7 +8,6 @@ export default function Home() {
 
   return (
     <>
-      <Head />
       <section className="home" id="home">
         <div className="home__container container grid">
           <div className="home__img-bg">
@@ -43,7 +37,7 @@ export default function Home() {
               <a href="#" className="button button--gray button--small">
                 Discover
               </a>
-              <Link to="/checkout">
+              <Link to="/Checkout">
                 <button className="button home__button">ADD TO CART</button>
               </Link>
             </div>
@@ -61,10 +55,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Featured />
-      <Story />
-      <Variety />
-      <Footer />
     </>
   );
 }

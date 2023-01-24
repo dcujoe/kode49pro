@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import checkout from "./components/checkout";
-import Home from "./components/Home";
+import Checkout from "./components/Checkout";
+import Allcomponents from "./components/Allcomponents";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -10,11 +10,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/checkout" element={<checkout />} />
+          <Route path="/" element={<Allcomponents />} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
-      ;
     </div>
   );
 }
