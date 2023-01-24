@@ -3,7 +3,7 @@ import Head from "./Head";
 import Home from "./Home";
 import Featured from "./Featured";
 import Story from "./Story";
-import Variety from "./Variety";
+import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
 const Allcomponents = () => {
@@ -13,7 +13,7 @@ const Allcomponents = () => {
       <Home />
       <Featured />
       <Story />
-      <Variety />
+      <Newsletter />
       <Footer />
     </div>
   );

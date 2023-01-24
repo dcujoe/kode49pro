@@ -9,8 +9,6 @@ import { getBasketTotal } from "./reducer";
 export default function Head({ id, title, image, price }) {
   const [{ basket }, dispatch] = useStateValue();
 
-  let searchData = data.icons;
-
   const [value, setValue] = useState("");
 
   const onChange = (event) => {
@@ -110,12 +108,7 @@ export default function Head({ id, title, image, price }) {
               </li>
               <li className="nav__item">
                 <a href="#story" className="nav__link">
-                  Story
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#variety" className="nav__link">
-                  Variety
+                  Our Story
                 </a>
               </li>
             </ul>
