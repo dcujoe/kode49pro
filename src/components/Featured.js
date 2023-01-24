@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/featured.css";
 import homeimage from "../assets/img/food7.jpeg";
-import { icons } from "react-icons";
+import Product from "./Product";
+import { useStateValue } from "./StateProvider";
 
 export default function Featured({ price, image, id, title }) {
   const [data, setData] = useState([]);
+  const [state, dispatch] = useStateValue();
+  const addToBasket = () => {
+    // dispatch is the javascript object that indicates the action to be done
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+      },
+    });
+  };
 
   const imageData = require("../data.json");
 
@@ -16,15 +30,16 @@ export default function Featured({ price, image, id, title }) {
         <div className="featured__container grid">
           <article className="featured__card">
             <span className="featured__tag">Sale</span>
-
             <img src={homeimage} alt="" className="featured__img" />
-            {image}
+
             <div className="featured__data">
               <h3 className="featured__title">Jazzmaster</h3>
               <span className="featured__price">{price}</span>
             </div>
 
-            <button className="button featured__button">ADD TO CART</button>
+            <button className="button featured__button" onClick={addToBasket}>
+              ADD TO CART
+            </button>
           </article>
 
           <article className="featured__card">
@@ -37,7 +52,9 @@ export default function Featured({ price, image, id, title }) {
               <span className="featured__price">$250</span>
             </div>
 
-            <button className="button featured__button">ADD TO CART</button>
+            <button className="button featured__button" onClick={addToBasket}>
+              ADD TO CART
+            </button>
           </article>
 
           <article className="featured__card">
@@ -50,7 +67,9 @@ export default function Featured({ price, image, id, title }) {
               <span className="featured__price">$890</span>
             </div>
 
-            <button className="button featured__button">ADD TO CART</button>
+            <button className="button featured__button" onClick={addToBasket}>
+              ADD TO CART
+            </button>
           </article>
         </div>
       </section>

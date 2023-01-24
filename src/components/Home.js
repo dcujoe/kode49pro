@@ -2,9 +2,23 @@ import React, { useState, useEffect } from "react";
 import "./compocss/Home.css";
 import { Link } from "react-router-dom";
 import homeimage from "../assets/img/food7.jpeg";
+import { getBasketTotal } from "./reducer";
 
-export default function Home() {
+export default function Home({ price, image, id, title }) {
   const [data, setData] = useState("");
+  const [basket, dispatch] = useState([]);
+  const addToBasket = () => {
+    // dispatch is the javascript object that indicates the action to be done
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+      },
+    });
+  };
 
   return (
     <>
@@ -37,9 +51,10 @@ export default function Home() {
               <a href="#" className="button button--gray button--small">
                 Discover
               </a>
-              <Link to="/Checkout">
-                <button className="button home__button">ADD TO CART</button>
-              </Link>
+
+              <button className="button home__button" onClick={addToBasket}>
+                ADD TO CART
+              </button>
             </div>
             <h1 className="home__title">
               WELCOME TO THE FUTURE

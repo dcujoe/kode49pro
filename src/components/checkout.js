@@ -10,6 +10,7 @@ const Checkout = ({ id, title, image, price, rating }) => {
 
   return (
     <div>
+      <Head />
       <div className="checkout">
         <div className="checkout-left">
           <img

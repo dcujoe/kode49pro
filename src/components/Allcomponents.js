@@ -13,7 +13,7 @@ const Allcomponents = () => {
       <Home />
       <Featured />
       <Story />
-      {/*<Variety />*/}
+      <Variety />
       <Footer />
     </div>
   );
