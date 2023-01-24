@@ -1,6 +1,6 @@
 import React from "react";
 import "./compocss/Story.css";
-import homeimage from "../assets/img/food7.jpeg";
+import storyimage from "../img/food9.jpeg";
 
 export default function Story() {
   return (
@@ -10,20 +10,22 @@ export default function Story() {
           <div className="story__data">
             <h2 className="section__title story__section-title">Our Story</h2>
             <h1 className="story__title">
-              Inspirational Agro Start up of the year
+              Inspirational Agro Start-up of the year
             </h1>
 
-            <p className="story__description">
-              Get the best farm produce from anywhere in the world with just a
-              click of a button
-            </p>
+            <blockquote className="story__description">
+              Small beginnings with passion, can birth great things
+              <br /> From a small concept in University of Bonn
+              <br /> To creating a new Ecosystem
+              <br /> Agricultural Commerce
+            </blockquote>
             <a href="#" className="button button--small">
-              Discover
+              Discover new food possibilities
             </a>
           </div>
 
           <div className="story__images">
-            <img src={homeimage} alt="" className="story__img" />
+            <img src={storyimage} alt="" className="story__img" />
             <div className="story__square"></div>
           </div>
         </div>

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/Home.css";
 import { Link } from "react-router-dom";
-import homeimage from "../assets/img/food7.jpeg";
+import homeimage1 from "../img/food7.jpeg";
+import homevideo from "../img/farm.mp4";
 import { getBasketTotal } from "./reducer";
+import { useStateValue } from "./StateProvider";
 
 export default function Home({ price, image, id, title }) {
   const [data, setData] = useState("");
-  const [basket, dispatch] = useState([]);
+  const [basket, dispatch] = useStateValue([]);
   const addToBasket = () => {
     // dispatch is the javascript object that indicates the action to be done
     dispatch({
@@ -23,10 +25,13 @@ export default function Home({ price, image, id, title }) {
   return (
     <>
       <section className="home" id="home">
+        <video loop muted autoPlay playsInline className="home_video">
+          <source src={homevideo} type="video/mp4" />
+        </video>
         <div className="home__container container grid">
-          <div className="home__img-bg">
-            <img src={homeimage} alt="homeimage" className="home__img" />
-          </div>
+          {/*<div className="home__img-bg">
+            <img src={homeimage1} alt="homeimage" className="home__img" />
+          </div>*/}
 
           <div className="home__social">
             <Link to="https://www.facebook.com/">
@@ -45,11 +50,10 @@ export default function Home({ price, image, id, title }) {
               </a>
             </Link>
           </div>
-
           <div className="home__data">
             <div className="home__btns">
               <a href="#" className="button button--gray button--small">
-                Discover
+                Just click!
               </a>
 
               <button className="button home__button" onClick={addToBasket}>
@@ -60,12 +64,11 @@ export default function Home({ price, image, id, title }) {
               WELCOME TO THE FUTURE
               <br /> OF AGRICULTURE
             </h1>
-            <p className="home__description">
-              Get bulk food from farmers in Africa and Asia from comfort of your
-              home.
-            </p>
+            <h3 className="home__description">
+              Order from Africa & Asia with a click!
+            </h3>
             <button className="home__price">
-              <a>Best food deals</a>
+              <a>Best bulk food Africa </a>
             </button>
           </div>
         </div>

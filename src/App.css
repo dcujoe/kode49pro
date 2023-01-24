@@ -171,6 +171,9 @@ button {
 /* For small devices */
 
 @media screen and (max-width: 320px) {
+  .kode49 {
+    display: none;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);

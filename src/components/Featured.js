@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./compocss/featured.css";
-import homeimage from "../assets/img/food7.jpeg";
+import homeimage from "../img/food3.jpeg";
+import featured2 from "../img/food5.jpeg";
+import featured3 from "../img/food1.jpeg";
 import Product from "./Product";
 import { useStateValue } from "./StateProvider";
 
@@ -45,7 +47,7 @@ export default function Featured({ price, image, id, title }) {
           <article className="featured__card">
             <span className="featured__tag">Sale</span>
 
-            <img src={homeimage} alt="" className="featured__img" />
+            <img src={featured2} alt="" className="featured__img" />
 
             <div className="featured__data">
               <h3 className="featured__title">Ingersoll</h3>
@@ -60,7 +62,7 @@ export default function Featured({ price, image, id, title }) {
           <article className="featured__card">
             <span className="featured__tag">Sale</span>
 
-            <img src={homeimage} alt="" className="featured__img" />
+            <img src={featured3} alt="" className="featured__img" />
 
             <div className="featured__data">
               <h3 className="featured__title">Rose gold</h3>

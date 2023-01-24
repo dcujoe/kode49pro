@@ -60,7 +60,7 @@ export default function Head({ id, title, image, price }) {
               />
             </svg>
             <Link to="/">
-              <h2>Kode49</h2>
+              <h2 className="kode49">Kode49</h2>
             </Link>
           </a>
 

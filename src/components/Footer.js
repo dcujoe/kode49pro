@@ -43,27 +43,27 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__title">Product</h3>
+            <h3 className="footer__title">Products</h3>
 
             <ul className="footer__links">
               <li>
                 <a href="#" className="footer__link">
-                  Red pullovers
+                  Meat
                 </a>
               </li>
               <li>
                 <a href="#" className="footer__link">
-                  Green pullovers
+                  Cereals & Grains
                 </a>
               </li>
               <li>
                 <a href="#" className="footer__link">
-                  Summer style
+                  Vegetables
                 </a>
               </li>
               <li>
                 <a href="#" className="footer__link">
-                  Best collection
+                  Fruits
                 </a>
               </li>
             </ul>
