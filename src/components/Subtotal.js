@@ -1,6 +1,5 @@
 import React from "react";
 import "./compocss/subtotal.css";
-import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
 
@@ -9,7 +8,7 @@ const Subtotal = () => {
 
   return (
     <div className="subtotal">
-      <CurrencyFormat
+      <form
         renderText={(value) => (
           <>
             <p>
