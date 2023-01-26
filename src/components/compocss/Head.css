@@ -2,7 +2,8 @@
 
 .header {
   width: 100%;
-  background: #bdedfc;
+  background: #bdedfc transparent;
+  backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
   left: 0;
@@ -91,11 +92,11 @@
   width: 100%;
   height: 50px;
   position: -webkit-sticky;
-  background-color: #bdedfc;
+  background: #bdedfc transparent;
+  backdrop-filter: blur(20px);
   top: 0;
   z-index: 1;
   overflow-x: hidden;
-  border-bottom: solid 0.1rem white;
 }
 
 .roller a {
@@ -126,8 +127,8 @@
   position: relative;
   background-color: aliceblue;
   padding: 0.7rem;
-  border-radius: 0.3rem;
-  border: 0.1rem solid aliceblue;
+  border-radius: 0.25rem;
+  border: 0.005rem solid #bdedfc;
   overflow: hidden;
 }
 

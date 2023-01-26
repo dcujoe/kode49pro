@@ -30,7 +30,9 @@ export default function Head({ id, title, image, price }) {
     <>
       <header className="header" id="header">
         <div className="roller">
-          <a href="#">Order Agricultural products anytime from anywhere!</a>
+          <a href="#">
+            <h3>Our solution gives you food from anywhere in the world!</h3>
+          </a>
         </div>
         <nav className="nav container">
           <a href="#" className="nav__logo">

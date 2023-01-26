@@ -65,7 +65,9 @@ export default function Home({ price, image, id, title }) {
               <br /> OF AGRICULTURE
             </h1>
             <h3 className="home__description">
-              Order from Africa & Asia with a click!
+              What problem do we solve?
+              <br />
+              We help you order from Africa & Asia with a click!
             </h3>
             <button className="home__price">
               <a>Best bulk food Africa </a>
